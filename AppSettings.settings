@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GitLabNotifier" GeneratedClassName="AppSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DefaultUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://gitlab.com/hectormendezhuerta9/moon.atom</Value>
+    </Setting>
+    <Setting Name="DefaultFeedType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Atom</Value>
+    </Setting>
+    <Setting Name="UserUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UserFeedType" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>
