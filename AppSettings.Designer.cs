@@ -25,7 +25,7 @@ namespace GitLabNotifier {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://gitlab.com/hectormendezhuerta9/moon.atom")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://github.com/MachEnergy/GitLabNotifier/commits/master.atom")]
         public string DefaultUrl {
             get {
                 return ((string)(this["DefaultUrl"]));

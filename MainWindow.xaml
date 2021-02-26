@@ -28,10 +28,15 @@
                    FontSize="8"
                    Grid.Row="1"/>
 
-        <TextBlock Text="{Binding Content}"
+        <!--<TextBlock Text="{Binding Content}"
                    FontSize="12"
                    TextWrapping="WrapWithOverflow"
-                   Grid.Row="2"/>
+                   Grid.Row="2"/>-->
+        <WebBrowser x:Name="BrowserContent"
+                    VerticalAlignment="Stretch"
+                    HorizontalAlignment="Stretch"
+                    Grid.Row="2"
+                    Initialized="BrowserContent_Initialized"/>
       </Grid>
     </DataTemplate>
   </Window.Resources>

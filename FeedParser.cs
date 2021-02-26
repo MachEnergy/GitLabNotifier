@@ -36,6 +36,8 @@ namespace GitLabNotifier
   /// </summary>
   static public class FeedParser
   {
+    static public XDocument LastParsedFeed = new XDocument();
+
     /// <summary>
     /// Parses an Atom feed and returns a <see cref="IList&amp;lt;Item&amp;gt;"/>.
     /// </summary>
@@ -75,7 +77,7 @@ namespace GitLabNotifier
 
           try
           {
-            newItem.PublishDate = ParseDate(test_entry.Elements().First(i => i.Name.LocalName == "published")?.Value);
+            newItem.PublishDate = ParseDate(test_entry.Elements().First(i => i.Name.LocalName == "updated")?.Value);
           }
           catch (Exception ex)
           {
@@ -246,12 +248,18 @@ namespace GitLabNotifier
       else
         return DateTime.MinValue;
     }
+
+    static private bool CompareFeeds(XDocument doc1, XDocument doc2)
+    {
+      return doc1 != doc2;
+    }
   }
   /// <summary>
   /// Represents the XML format of a feed.
   /// </summary>
   public enum FeedType
   {
+    NOT_SET,
     /// <summary>
     /// Really Simple Syndication format.
     /// </summary>

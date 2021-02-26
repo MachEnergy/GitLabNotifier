@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="DefaultUrl" Type="System.String" Scope="User">
-      <Value Profile="(Default)">https://gitlab.com/hectormendezhuerta9/moon.atom</Value>
+      <Value Profile="(Default)">https://github.com/MachEnergy/GitLabNotifier/commits/master.atom</Value>
     </Setting>
     <Setting Name="DefaultFeedType" Type="System.String" Scope="User">
       <Value Profile="(Default)">Atom</Value>
